@@ -6,7 +6,9 @@
   <ItemGroup>
     <Compile Include="Arrays/ArrayCreate.fs"/>
     <Compile Include="Arrays/ArrayFilter.fs"/>
+    <Compile Include="Mix.fs"/>
     <Compile Include="Program.fs"/>
+
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="FSharp.Data" Version="3.3.3"/>

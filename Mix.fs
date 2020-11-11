@@ -10,3 +10,19 @@ module Mix =
 
     let z = 
         applyFunction mul 5 6
+
+    // Pattern matching function. 
+    type Oddness =
+        | IsOdd
+        | IsEven
+
+    let getOddness = function
+        | x when (x % 2) = 0 -> IsEven
+        | _ -> IsOdd 
+
+    // Match expression.
+    let getOddness2 x = 
+        match x with 
+            | x when (x % 2) = 0 -> IsEven
+            | _ -> IsOdd
+            

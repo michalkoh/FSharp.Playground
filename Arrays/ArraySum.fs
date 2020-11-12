@@ -8,6 +8,7 @@ module ArraySum =
         let requests = 
             [|
                 "http://www.google.com"
+                "http://www.notexisting.com"
                 "http://www.pluralsight.com"
             |]
 

@@ -15,6 +15,8 @@ module ArrayChoose =
         use wc = new WebClient()
         urls
         |> Array.choose (fun url -> 
-            try wc.DownloadString url |> Some
-            with _ -> None)
+            try 
+                wc.DownloadString url |> Some
+            with 
+                _ -> None)
         |> Array.iteri (fun i url -> printf "%i. %s" i (url.Substring(0, 100))) 

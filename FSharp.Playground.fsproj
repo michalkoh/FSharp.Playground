@@ -8,7 +8,7 @@
     <Compile Include="Arrays/ArrayFilter.fs"/>
     <Compile Include="Arrays/ArrayMap.fs"/>
     <Compile Include="Arrays/ArraySum.fs"/>
-    <Compile Include="Mix.fs"/>
+    <Compile Include="Arrays/ArrayChoose.fs"/>
     <Compile Include="Program.fs"/>
   </ItemGroup>
   <ItemGroup>

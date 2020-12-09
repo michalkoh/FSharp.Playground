@@ -6,6 +6,7 @@
   <ItemGroup>
     <Compile Include="Arrays/ArrayCreate.fs"/>
     <Compile Include="Arrays/ArrayFilter.fs"/>
+    <Compile Include="Arrays/ArrayIteri.fs"/>
     <Compile Include="Arrays/ArrayMap.fs"/>
     <Compile Include="Arrays/ArraySum.fs"/>
     <Compile Include="Arrays/ArrayChoose.fs"/>

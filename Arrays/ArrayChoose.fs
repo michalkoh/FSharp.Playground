@@ -6,7 +6,7 @@ module ArrayChoose =
 
     let sites = 
         [|
-            "http://www.google.com";
+            "http://www.google.com"
             "http://www.pluralsight.com"
             "http://notexisting.sk"
         |]
@@ -19,4 +19,5 @@ module ArrayChoose =
                 wc.DownloadString url |> Some
             with 
                 _ -> None)
-        |> Array.iteri (fun i url -> printf "%i. %s" i (url.Substring(0, 100))) 
+        |> Array.map (fun content -> sprintf "%s" (content.Substring(0, 100)))
+        //|> Array.iteri (fun i url -> printf "%i. %s" i (url.Substring(0, 10))) 

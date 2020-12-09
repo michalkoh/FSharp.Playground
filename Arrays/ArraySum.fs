@@ -21,3 +21,4 @@ module ArraySum =
             with 
             | _ -> None)
         |> Array.map (fun content -> content.Length)
+        |> Array.sum

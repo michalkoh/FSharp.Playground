@@ -10,6 +10,7 @@
     <Compile Include="Arrays/ArrayMap.fs"/>
     <Compile Include="Arrays/ArraySum.fs"/>
     <Compile Include="Arrays/ArrayChoose.fs"/>
+    <Compile Include="Sequences/SeqCreate.fs"/>
     <Compile Include="Program.fs"/>
   </ItemGroup>
   <ItemGroup>

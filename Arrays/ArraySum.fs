@@ -4,10 +4,11 @@ module ArraySum =
 
     open System.Net
 
-    let GetTotalLenth() = 
+    let GetTotalLength() = 
         let requests = 
             [|
                 "http://www.google.com"
+                "http://www.notexisting.com"
                 "http://www.pluralsight.com"
             |]
 

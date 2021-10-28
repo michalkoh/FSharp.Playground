@@ -11,6 +11,7 @@
 [Bb]in
 [Dd]ebug*/
 obj/
+*.obj/
 [Rr]elease*/
 [Tt]est[Rr]esult*
 [Bb]uild[Ll]og.*

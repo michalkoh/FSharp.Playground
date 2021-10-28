@@ -11,8 +11,7 @@
     <Compile Include="Arrays/ArraySum.fs" />
     <Compile Include="Arrays/ArrayChoose.fs" />
     <Compile Include="Sequences/SeqCreate.fs" />
-    <Compile Include="Workshop/Application/Types.fs" />
-    <Compile Include="Workshop/Tests/Tests.fs" />
+    <Compile Include="Workshop/Types.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
   <ItemGroup>

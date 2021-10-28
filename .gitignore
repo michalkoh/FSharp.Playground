@@ -7,11 +7,10 @@
 *.cache
 *.log
 *.lib
-.ionide/*
 [Bb]in
 [Dd]ebug*/
-obj/
-*.obj/
+*/bin/
+*/obj/
 [Rr]elease*/
 [Tt]est[Rr]esult*
 [Bb]uild[Ll]og.*
@@ -28,4 +27,5 @@ aspnetdb_log.ldf
 *~
 \#*\#
 .fake
-.ionide
+.ionide/
+/.ionide

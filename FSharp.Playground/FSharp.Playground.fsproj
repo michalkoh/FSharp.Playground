@@ -14,6 +14,7 @@
     <Compile Include="Arrays/ArrayChoose.fs" />
     <Compile Include="Sequences/SeqCreate.fs" />
     <Compile Include="Workshop/Types.fs" />
+    <Compile Include="Workshop/Functions.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 

@@ -9,6 +9,12 @@ module Functions =
             then (customer, 120M)
             else (customer, 80M)
 
+    let tryPromoteToVip (customerWithPurchases : Customer * decimal) =
+        let (customer, amount) = customerWithPurchases
+        if (amount > 100M)
+            then { customer with IsVip = true }
+            else customer
+
     let increase condition customer = 
         if condition customer  
             then { customer with Credit = customer.Credit + 100M }

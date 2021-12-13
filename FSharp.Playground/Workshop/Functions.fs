@@ -3,6 +3,7 @@ namespace FSharp.Playground.Workshop
 module Functions = 
 
     open FSharp.Playground.Workshop.Types
+    open System
 
     let getPurchases (customer : Customer) = 
         if customer.Id % 2 = 0 
@@ -21,3 +22,8 @@ module Functions =
             else { customer with Credit = customer.Credit + 50M<EUR> }
 
     let increaseCreditUsingVip = increase (fun c -> c.IsVip)
+
+    let isAdult (customer : Customer) = 
+        match customer.PersonalDetails with
+        | None -> false
+        | Some d -> d.DateOfBirth.AddYears 18 <= DateTime.Now.Date

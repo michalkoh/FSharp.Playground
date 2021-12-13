@@ -21,6 +21,6 @@ module Types =
         Id: int
         IsVip: bool
         Credit: decimal<EUR>
-        PersonalDetails: PersonalDetails
+        PersonalDetails: PersonalDetails option
         Notifications: Notifications
     }

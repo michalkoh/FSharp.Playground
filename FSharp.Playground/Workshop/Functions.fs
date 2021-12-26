@@ -23,7 +23,18 @@ module Functions =
 
     let increaseCreditUsingVip = increase (fun c -> c.IsVip)
 
+    let upgradeCustomer customer = 
+        customer
+        |> getPurchases
+        |> tryPromoteToVip
+        |> increaseCreditUsingVip
+
     let isAdult (customer : Customer) = 
         match customer.PersonalDetails with
         | None -> false
         | Some d -> d.DateOfBirth.AddYears 18 <= DateTime.Now.Date
+
+    let getAlert (customer : Customer) = 
+         match customer.Notifications with
+         | ReceiveNotifications(receiveAlerts = true) -> sprintf "Alert for customer %i" customer.Id
+         | _ -> ""

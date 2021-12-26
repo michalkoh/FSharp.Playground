@@ -15,6 +15,7 @@
     <Compile Include="Sequences/SeqCreate.fs" />
     <Compile Include="Workshop/Types.fs" />
     <Compile Include="Workshop/Functions.fs" />
+    <Compile Include="Workshop/Classes.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 

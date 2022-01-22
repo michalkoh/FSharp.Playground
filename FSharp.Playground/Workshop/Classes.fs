@@ -17,3 +17,10 @@ module Classes =
         member c.UpgradeCustomer customer =
             customer 
             |> upgradeCustomer
+
+    type MyClassWithConstructor(dataIn) as s =
+        let data = dataIn
+        do
+            s.PrintMessage()
+        member this.PrintMessage() =
+            printf "Creating MyClassWithConstructor with Data %d" data

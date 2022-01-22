@@ -29,3 +29,5 @@ aspnetdb_log.ldf
 .fake
 .ionide/
 /.ionide
+/.vscode
+/.vs
